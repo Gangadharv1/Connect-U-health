@@ -11,7 +11,7 @@ html, body {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background:black;
+    background: black;
     color: #333;
     display: flex;
     flex-direction: column;
@@ -22,9 +22,8 @@ body {
     flex-direction: column;
 }
 
-
 #header {
-    background: rgba(250, 250, 250, 0.1);
+    background: rgba(3, 75, 127, 0.1);
     color: #fff;
     padding: 20px 0;
     display: flex;
@@ -33,7 +32,7 @@ body {
 }
 
 .logo img {
-    max-width: 150px;
+    max-width: 250px;
 }
 
 nav ul {
@@ -53,89 +52,129 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+    color: #0a6bbb;
 }
-
 
 main {
     flex: 1; 
 }
 
-
 #hero {
     position: relative;
     overflow: hidden;
-    height: 400px; 
-    background-image: url('./Banner.jpeg'); 
-    background-size: cover;
-    background-position: center;
-}
-
-
-.hero-content {
-    position: relative;
-    z-index: 1; 
-    color: #fff;
+    height: 500px; 
+    background-image: url('./banner.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    display: flex; 
+    flex-direction: column;
+    justify-content:space-between; 
+    align-items: center; 
+    text-align: center; 
+    color: #fff; 
+}.hero-content {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 100px 20px;
+    flex-grow: 1
+   
 }
+
 
 #hero h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
 }
 
+.animated-text {
+    opacity: 0; 
+    transform: translateY(20px); 
+    animation: fadeInUp 2s forwards; 
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
 #hero p {
     font-size: 1.2em;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
-
-.buttons {
-    display: flex;
+.box-container {
+    display: flex; 
     justify-content: center;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+   
 }
 
-.button {
-    background: #0c0c0ce5;
-    color: #fff;
-    padding: 10px 20px;
-    margin: 0 10px;
+.box {
+    background: rgba(5, 5, 5, 0.8); 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    margin: 0 10px; 
+    padding: 20px; 
+    width: 300px; 
+    transition: transform 0.3s ease;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s;
+    color: white;
 }
 
-.button:hover {
-    background: #080808e5;
-}   
+.box img {
+    max-width: 100%; 
+    height: 50px;
+    border-radius: 5px; 
+    
+}
+
+.box:hover {
+    transform: scale(1.05);
+     
+}  
+.content-section {
+    position: relative;
+    overflow: hidden;
+    height: 500px; 
+    background: linear-gradient(360deg,#000000,#310238e5); 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    margin: 20px 0; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+    margin-bottom: 10px; 
+}
+
+.content-section p {
+    line-height: 1.5; 
+}
+#first-section {
+    height: 400px; 
+    background-image: url('./poster.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    color: #fff; 
+}
 
 footer {
     text-align: center;
     padding: 20px 0;
     background: black;
     color: #fff;
-    position: sticky;
-}
-
-@media (max-width: 768px) {
-    #header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    #hero h1 {
-        font-size: 2em;
-    }
-
-    #hero p {
-        font-size: 1em;
-    }
 }
