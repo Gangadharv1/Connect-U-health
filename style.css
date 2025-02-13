@@ -9,10 +9,10 @@ html, body {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family:  'Times New Roman', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif serif sans-serif;
     line-height: 1.6;
-    background: black;
-    color: #333;
+    background: black;  
+    color: #fff;
     display: flex;
     flex-direction: column;
 }
@@ -29,6 +29,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+    
 }
 
 .logo img {
@@ -51,7 +55,6 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
     color: #0a6bbb;
 }
 
@@ -114,8 +117,9 @@ main {
 }
 
 .box {
-    background: rgba(5, 5, 5, 0.8); 
+    background: rgba(5, 5, 5, 0.3); 
     border-radius: 8px; 
+    border: 1px solid #ccc;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     text-align: center; 
     margin: 0 10px; 
@@ -135,19 +139,20 @@ main {
 
 .box:hover {
     transform: scale(1.05);
+    background: rgba(2, 49, 69, 0.3); 
      
 }  
 .content-section {
     position: relative;
     overflow: hidden;
     height: 500px; 
-    background: linear-gradient(360deg,#000000,#310238e5); 
+    background: linear-gradient(360deg,#000000,#102e66e5); 
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
     text-align: center; 
-    margin: 20px 0; 
+    margin: 15px 0; 
     border-radius: 8px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -159,17 +164,61 @@ main {
 .content-section p {
     line-height: 1.5; 
 }
-#first-section {
-    height: 400px; 
-    background-image: url('./poster.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    display: flex; 
+#departments {
+    display: flex;
+    width: 100%; 
+    height: auto;   
+    background-image: url(./poster.jpg);
+    background-color: rgba(250, 250, 250, 0.1); 
+    border-radius: 8px; 
+    
+}
+.department-info {
+    padding: 10px; 
+    border-radius: 8px; 
+    margin-right: 40px; 
+    color: #fff; 
+    flex: 1; 
+    display: flex;
     flex-direction: column; 
     justify-content: center; 
-    align-items: center; 
+}
+.department-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    flex: 2; 
+  
+}
+
+.department-box {
+    background-color: rgba(250, 250, 250, 0.1); 
+    border: 1px solid #ccc;
+    border-radius: 8px; 
     text-align: center; 
-    color: #fff; 
+    padding: 10px; 
+    width: 150px; 
+    height: 150px; 
+    transition: background-color 0.3s, transform 0.2s; 
+    margin: 0 auto; 
+}
+
+.department-box img {
+    max-width: 80%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+.department-box p {
+    margin-top: 5px; 
+    font-weight: bold; 
+    color: #fff;
+    line-height: 1.2;
+    
+}
+
+.department-box:hover {
+    transform: scale(1.05); 
 }
 
 footer {
