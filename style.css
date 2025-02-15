@@ -9,13 +9,14 @@ html, body {
 }
 
 body {
-    font-family:  'Times New Roman', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif serif sans-serif;
+    font-family: 'Times New Roman', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.6;
     background: black;  
     color: #fff;
     display: flex;
     flex-direction: column;
 }
+
 .container {
     flex: 1;
     display: flex;
@@ -32,7 +33,6 @@ body {
     position: sticky;
     top: 0; 
     z-index: 1000; 
-    
 }
 
 .logo img {
@@ -71,20 +71,20 @@ main {
     background-position: center; 
     display: flex; 
     flex-direction: column;
-    justify-content:space-between; 
+    justify-content: space-between; 
     align-items: center; 
     text-align: center; 
     color: #fff; 
-}.hero-content {
+}
+
+.hero-content {
     display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex-grow: 1
-   
+    flex-grow: 1;
 }
-
 
 #hero h1 {
     font-size: 2.5em;
@@ -108,12 +108,12 @@ main {
     font-size: 1.2em;
     margin-bottom: 20px;
 }
+
 .box-container {
     display: flex; 
     justify-content: center;
     margin-top: 20px; 
     margin-bottom: 20px; 
-   
 }
 
 .box {
@@ -134,18 +134,17 @@ main {
     max-width: 100%; 
     height: 50px;
     border-radius: 5px; 
-    
 }
 
 .box:hover {
     transform: scale(1.05);
     background: rgba(2, 49, 69, 0.3); 
-     
 }  
+
 .content-section {
     position: relative;
     overflow: hidden;
-    height: 500px; 
+    height: auto; 
     background: linear-gradient(360deg,#000000,#102e66e5); 
     display: flex; 
     flex-direction: column; 
@@ -155,6 +154,7 @@ main {
     margin: 15px 0; 
     border-radius: 8px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
 }
 
 .content-section h2 {
@@ -164,6 +164,7 @@ main {
 .content-section p {
     line-height: 1.5; 
 }
+
 #departments {
     display: flex;
     width: 100%; 
@@ -171,8 +172,9 @@ main {
     background-image: url(./images/poster.jpg);
     background-color: rgba(250, 250, 250, 0.1); 
     border-radius: 8px; 
-    
+    transition: transform 0.3s ease;
 }
+
 .department-info {
     padding: 10px; 
     border-radius: 8px; 
@@ -183,12 +185,12 @@ main {
     flex-direction: column; 
     justify-content: center; 
 }
+
 .department-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     flex: 2; 
-  
 }
 
 .department-box {
@@ -214,11 +216,66 @@ main {
     font-weight: bold; 
     color: #fff;
     line-height: 1.2;
-    
 }
 
 .department-box:hover {
     transform: scale(1.05); 
+}
+
+.profiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.profile-card {
+    background-color: rgba(250, 250, 250, 0.1); 
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+}
+
+.doctor-photo {
+    width: 100px; /* Adjusted for better visibility */
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.doctor-name {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.specialty {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.appointment-button {
+    background-color: rgba(250, 250, 250, 0.1); 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    height: 40px; 
+    width: 100%;
+}
+
+.appointment-button:hover {
+    background-color: #051208;
 }
 
 footer {

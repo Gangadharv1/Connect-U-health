@@ -21,7 +21,7 @@
                     <li><a href="#about-us">About Us</a></li>
                     <li><a href="#departments">Departments</a></li>
                     <li><a href="#request-appointment">Request Appointment</a></li>
-                    <li><a href="#find-doctors">Find Doctors</a></li>
+                    <li><a href="#find-doctors" id="find-doctor">Find Doctors</a></li>
                 </ul>
             </nav>
         </header>
@@ -36,7 +36,7 @@
                             <img src="./images/request-appointment_1.png" alt="Request Appointment" />
                             <p>Request Appointment</p>
                         </a>
-                        <a class="box" href="#find-doctors">
+                        <a class="box" href="#find-doctors" id="find-doctor">
                             <img src="./images/find-doc_1.png" alt="Find Doctor" />
                             <p>Find Doctor</p>
                         </a>
@@ -88,23 +88,73 @@
                     </div>
                 </div>
             </section>
-
-            <!--patient section-->
-            <section class="content-section">
-                <h2>Patient Testimonials</h2>
-                <p>Hear from our satisfied patients about their experiences with us.</p>
+            
+            <section class="content-section" id="doctor-profiles" style="display: none;">
+                <h2>Doctor Profiles</h2>
+                <div class="profiles">
+                    <div id="Cardiology" class="profile-card">
+                        <img src="./images/Cardio_p.jpg" alt="Cardiologist"  class="doctor-photo">
+                        <h2 class="doctor-name">Dr. Deepika</h2>
+                        <p class="specialty">Cardiology</p>
+                        <button class="appointment-button">Book Appointment</button>
+                    </div>
+                    <div  id="Neurology" class="profile-card">
+                        <img src="./images/neuro_p.jpg" alt="Neurologist" class="doctor-photo">
+                        <h2 class="doctor-name">Dr. Ravi Kumar</h2>
+                        <p class="specialty">Neurology</p>
+                        <button class="appointment-button">Book Appointment</button>
+                    </div>
+                    <div  id="Orthopedics" class="profile-card">
+                        <img src="./images/ortho_p.png" alt="Orthopedic" class="doctor-photo">
+                        <h2 class="doctor-name">Dr. Sanket</h2>
+                        <p class="specialty">Orthopedics</p>
+                        <button class="appointment-button">Book Appointment</button>
+                    </div>
+                    <div  id="Nephrology" class="profile-card">
+                        <img src="./images/nephro_p.jpg" alt="Nephrologist" class="doctor-photo">
+                        <h2 class="doctor-name">Dr. Suman</h2>
+                        <p class="specialty">Nephrology</p>
+                        <button class="appointment-button">Book Appointment</button>
+                    </div>
+                    <div id="Gynecology"  class="profile-card">
+                        <img src="./images/Gynec_p.png" alt="Gynecologist" class="doctor-photo">
+                        <h2 class="doctor-name">Dr. Sara</h2>
+                        <p class="specialty">Gynecology</p>
+                        <button class="appointment-button">Book Appointment</button>
+                    </div>
+                    <div id="General_surgery"  class="profile-card">
+                        <img src="./images/surgery_p.webp" alt="General Surgeon" class="doctor-photo">
+                        <h2 class="doctor-name">Dr. Dharani</h2>
+                        <p class="specialty">General Surgery</p>
+                        <button class="appointment-button">Book Appointment</button>
+                    </div>
+                    <div id="Medicine" class="profile-card">
+                        <img src="./images/Medicine_p.png" alt="General Medicine" class="doctor-photo">
+                        <h2 class="doctor-name">Dr. Prapul</h2>
+                        <p class="specialty">General Medicine</p>
+                        <button class="appointment-button">Book Appointment</button>
+                    </div>
+                    <div id="Cancer_care"  class="profile-card">
+                        <img src="./images/Cancer-P.jpg" alt="Cancer Care" class="doctor-photo">
+                        <h2 class="doctor-name">Dr. Pradeep</h2>
+                        <p class="specialty">Cancer Care</p>
+                        <button class="appointment-button">Book Appointment</button>
+                    </div>
+                    <div id="Gastrology"  class="profile-card">
+                        <img src="./images/gastro_p.jpg" alt="Gastroenterologist" class="doctor-photo">
+                        <h2 class="doctor-name">Dr. Sushmitha</h2>
+                        <p class="specialty">Gastroenterology</p>
+                        <button class="appointment-button">Book Appointment</button>
+                    </div>
+                </div>
             </section>
 
-            <!-- contact Section -->
-            <section class="content-section">
-                <h2>Contact Us</h2>
-                <p>Get in touch with us for any inquiries or to schedule an appointment.</p>
-            </section>
+            <footer>
+                <p>© 2025 ConnectUhealth. All rights reserved.</p>
+            </footer>
         </main>
-        
-        <footer>
-            <p>© 2025 ConnectUhealth. All rights reserved.</p>
-        </footer>
     </div>
+        <script src="main.js"></script> 
+    
 </body>
 </html>
