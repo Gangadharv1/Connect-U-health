@@ -221,7 +221,6 @@ main {
 .department-box:hover {
     transform: scale(1.05); 
 }
-
 .profiles {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
