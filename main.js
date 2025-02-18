@@ -4,6 +4,19 @@ document.addEventListener("DOMContentLoaded", function() {
     const doctorProfilesSection = document.getElementById('doctor-profiles');
     const findDoctorsLink = document.getElementById('find-doctor');
     const findDoctorBox = document.querySelector('.box[href="#find-doctors"]');
+    const aboutUsLink = document.getElementById('about-us-link');
+    const aboutUsSection = document.getElementById('about-us');
+    const otherSections = document.querySelectorAll('.content-section');
+     
+    
+    // about us link
+    aboutUsLink.addEventListener('click', function(event) {
+        event.preventDefault(); 
+      
+        aboutUsSection.style.display = 'block';
+        aboutUsSection.scrollIntoView({ behavior: 'smooth' });
+    });
+
 
     // Show doctor profiles when a department is clicked
     departmentBoxes.forEach(box => {
@@ -29,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
+         // function  to show doctors profiles
     function showAllDoctorProfiles() {
         doctorProfilesSection.style.display = 'block'; 
 
