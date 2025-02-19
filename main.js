@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
+
+    if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+        window.location.href = './index.html'; 
+    }
    
     const departmentBoxes = document.querySelectorAll('.department-box');
     const doctorProfilesSection = document.getElementById('doctor-profiles');
