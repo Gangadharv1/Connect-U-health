@@ -1,0 +1,138 @@
+<!-- request-appointment.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' 
+    rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <title>Request Appointment - ConnectUhealth</title>
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./images/logo1.webp" alt="ConnectUhealth Logo" />
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#about-us" id="about-us-link">About Us</a></li>
+                    <li><a href="index.html#departments">Departments</a></li>
+                    <li><a href="request-appointment.html" class="request-appointment-link" >Request Appointment</a></li>
+                    <li><a href="index.html#find-doctors" id="find-doctor">Find Doctors</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="appointment-dropdown" class="content-section">
+                <h2>Request an Appointment</h2> 
+                <div class="dropdown-container">
+                    <div class="dropdown">
+                        <label for="specialty">Specialty:</label>
+                        <select id="specialty">
+                            <option value="">Select Specialty</option>
+                            <option value="Cardiology">Cardiology</option>
+                            <option value="Neurology">Neurology</option>
+                            <option value="Orthopedics">Orthopedics</option>
+                            <option value="Nephrology">Nephrology</option>
+                            <option value="Gynecology">Gynecology</option>
+                            <option value="General Surgery">General Surgery</option>
+                            <option value="Medicine">Medicine</option>
+                            <option value="Cancer Care">Cancer Care</option>
+                            <option value="Gastrology">Gastrology</option>
+                        </select>
+                    </div>
+                    
+                    <span>OR</span>
+
+                    <div class="dropdown">  
+                        <label for="doctor">Doctor:</label>
+                        <select id="doctor">
+                            <option value="">Select Doctor</option>
+                            <option value="Dr. Deepika">Dr. Deepika </option>
+                            <option value="Dr. Ravi Kumar">Dr. Ravi Kumar </option>
+                            <option value="Dr. Sanket">Dr. Sanket </option>
+                            <option value="Dr. Suman">Dr. Suman</option>
+                            <option value="Dr. Sara">Dr. Sara </option>
+                            <option value="Dr. Dharani">Dr. Dharani</option>
+                            <option value="Dr. Prapul">Dr. Prapul </option>
+                            <option value="Dr. Pradeep">Dr. Pradeep </option>
+                            <option value="Dr. Sushmitha">Dr. Sushmitha </option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+           
+            <section class="content-section" id="doctor-profiles" style="display: none;">
+                <h2>Available Doctors</h2>
+                <div class="profiles">
+                    <div id="Cardiology" class="profile-card">
+                        <img src="./images/Cardio_p.jpg" alt="Cardiologist" class="doctor-photo">
+                        <h2 class="doctor-name">Dr. Deepika</h2>
+                        <p class="specialty">Cardiology</p>
+                        <button class="appointment-button">Book Appointment</button>
+                    </div>
+                    <div id="Neurology" class="profile-card">
+                        <img src="./images/neuro_p.jpg" alt="Neurologist" class="doctor-photo">
+                        <h2 class="doctor-name">Dr. Ravi Kumar</h2>
+                        <p class="specialty">Neurology</p>
+                        <button class="appointment-button">Book Appointment</button>
+                    </div>
+                    <div id="Orthopedics" class="profile-card">
+                        <img src="./images/ortho_p.png" alt="Orthopedic" class="doctor-photo">
+                        <h2 class="doctor-name">Dr. Sanket</h2>
+                        <p class="specialty">Orthopedics</p>
+                        <button class="appointment-button">Book Appointment</button>
+                    </div>
+                    <div id="Nephrology" class="profile-card">
+                        <img src="./images/nephro_p.jpg" alt="Nephrologist" class="doctor-photo">
+                        <h2 class="doctor-name">Dr. Suman</h2>
+                        <p class="specialty">Nephrology</p>
+                        <button class="appointment-button">Book Appointment</button>
+                    </div>
+                    <div id="Gynecology" class="profile-card">
+                        <img src="./images/Gynec_p.png" alt="Gynecologist" class="doctor-photo">
+                        <h2 class="doctor-name">Dr. Sara</h2>
+                        <p class="specialty">Gynecology</p>
+                        <button class="appointment-button">Book Appointment</button>
+                    </div>
+                    <div id="General_surgery" class="profile-card">
+                        <img src="./images/surgery_p.webp" alt="General Surgeon" class="doctor-photo">
+                        <h2 class="doctor-name">Dr. Dharani</h2>
+                        <p class="specialty">General Surgery</p>
+                        <button class="appointment-button">Book Appointment</button>
+                    </div>
+                    <div id="Medicine" class="profile-card">
+                        <img src="./images/Medicine_p.png" alt="General Medicine" class="doctor-photo">
+                        <h2 class="doctor-name">Dr. Prapul</h2>
+                        <p class="specialty">General Medicine</p>
+                        <button class="appointment-button">Book Appointment</button>
+                    </div>
+                    <div id="Cancer_care" class="profile-card">
+                        <img src="./images/Cancer-P.jpg" alt="Cancer Care" class="doctor-photo">
+                        <h2 class="doctor-name">Dr. Pradeep</h2>
+                        <p class="specialty">Cancer Care</p>
+                        <button class="appointment-button">Book Appointment</button>
+                    </div>
+                    <div id="Gastrology" class="profile-card">
+                        <img src="./images/gastro_p.jpg" alt="Gastroenterologist" class="doctor-photo">
+                        <h2 class="doctor-name">Dr. Sushmitha</h2>
+                        <p class="specialty">Gastrology</p>
+                        <button class="appointment-button">Book Appointment</button>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <p>© 2025 ConnectUhealth. All rights reserved.</p>
+            </footer>
+        </main>
+    </div>
+    <script src="main.js"></script> 
+</body>
+</html>

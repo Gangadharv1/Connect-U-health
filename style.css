@@ -257,7 +257,7 @@ main {
     border-radius: 10px;
     padding: 20px;
     text-align: center;
-    transition: transform 0.2s;
+    transition: all 0.3s ease;
 }
 
 .profile-card:hover {
@@ -300,7 +300,40 @@ main {
     background-color: #051208;
 }
 
+.dropdown-container {
+    display: flex;
+    align-items: center; 
+}
+
+.dropdown-container span {
+    margin: 0px 10px; 
+}
+
+.dropdown {     
+    width: 400px;
+    margin-right: 50px; 
+    display: flex;
+    flex-direction: column; 
+}
+
+.dropdown:last-child {
+    margin-right: 0;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     text-align: center;
     padding: 20px 0;
     background: black;
